@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FifthFragment">
+
+    <TextView
+        android:id="@+id/sort_cbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="@string/variety"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/fifth_choice_cbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sort_cbd">
+
+        <RadioButton
+            android:id="@+id/fifth_juicy_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/juicy_fruit" />
+
+        <RadioButton
+            android:id="@+id/fifth_amnesia_haze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amnesia_haze" />
+
+        <RadioButton
+            android:id="@+id/fifth_bubble_gum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bubble_gum" />
+
+        <RadioButton
+            android:id="@+id/fifth_strawberry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strawberry" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/weight_cbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="@string/weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_choice_cbd"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/fifth_how_many_cbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_cbd">
+
+        <RadioButton
+            android:id="@+id/fifth_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/third_weight_one"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/fifth_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/third_weight_two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <RadioButton
+            android:id="@+id/fifth_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/third_weight_three"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+    </RadioGroup>
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/fifth_switch_cbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="@string/gift_warp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_how_many_cbd"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <Button
+        android:id="@+id/fifth_fragment_cancel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toStartOf="@id/fifth_fragment_next"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_switch_cbd" />
+
+    <Button
+        android:id="@+id/fifth_fragment_next"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="80dp"
+        android:layout_marginTop="80dp"
+        android:background="#00BCD4"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fifth_fragment_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_switch_cbd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

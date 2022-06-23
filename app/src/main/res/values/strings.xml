@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Test337</string>
+    <string name="result_your_order">Your order:</string>
+    <string name="start_order">Start order</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">next</string>
+    <string name="radiobuttonChoiceWeed">Magic oak cone</string>
+    <string name="radiobuttonChoiceWeed2">Healing herb</string>
+    <string name="radiobuttonChoiceWeed3">Magic cigarette </string>
+    <string name="third_weight_one">One magic unit (calculus in grams)</string>
+    <string name="third_weight_two">Two magic units (calculus in grams)</string>
+    <string name="third_weight_three">Three magic units (calculus in grams) </string>
+    <string name="gift_warp">Gift wrap</string>
+    <string name="delivery">Delivery</string>
+    <string name="weight">Weight</string>
+    <string name="variety">Variety</string>
+    <string name="amnesia">Potion of Amnesia</string>
+    <string name="black_widow">Healing black butterfly</string>
+    <string name="skunk">Magic skunk</string>
+    <string name="pablo_escobar">Ancient wizard Pablo Escobar</string>
+    <string name="montreal">The Enchanted city of Montreal</string>
+    <string name="filler">Enchanted filler</string>
+    <string name="Amount">Amount</string>
+    <string name="one">One magical unit (piece)</string>
+    <string name="two">Two magical unit (piece)</string>
+    <string name="three">Three magical unit (piece)</string>
+    <string name="juicy_fruit">Juicy fruits of the magic garden</string>
+    <string name="amnesia_haze">Potion of Amnesia</string>
+    <string name="bubble_gum">Magic chewing gum</string>
+    <string name="strawberry">Strawberry chakras from the magical garden</string>
+    <string name="ResultVariety">Variety:</string>
+    <string name="ResultWeight">Weight:</string>
+    <string name="ResultType">Type:</string>
+    <string name="ResultWarp">Warp:</string>
+    <string name="price_result">Price: %S</string>
+    <string name="gift_warp_true">Selected</string>
+    <string name="gift_warp_false">Not chosen</string>
+    <string name="order">New magic order</string>
+    <string name="order_details">Product type: %1$s \n Variety: %2$s \n The weight: %3$s \n Gift wrap: %4$s \n  Total: %5$s \n\n Thank you!</string>
+    <string name="warning">Warning This application is not intended to sell drugs! The application is implemented exclusively in educational research. Drugs are bad!</string>
+
+
+</resources>

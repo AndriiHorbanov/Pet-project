@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_left_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_default" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_right_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/margin_default" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help_bottom_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/margin_default" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_padger"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_default"
+        app:layout_constraintBottom_toTopOf="@+id/product_type"
+        app:layout_constraintEnd_toEndOf="@id/help_right_line"
+        app:layout_constraintStart_toEndOf="@id/help_left_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/product_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_default"
+        app:layout_constraintBottom_toTopOf="@id/second_fragment_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/help_right_line"
+        app:layout_constraintStart_toStartOf="@id/help_left_line"
+        app:layout_constraintTop_toBottomOf="@+id/view_padger">
+
+        <RadioButton
+            android:id="@+id/hash_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radiobuttonChoiceWeed" />
+
+        <RadioButton
+            android:id="@+id/sbd_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobuttonChoiceWeed2" />
+
+        <RadioButton
+            android:id="@+id/spliff_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobuttonChoiceWeed3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/second_fragment_cancel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="@id/help_bottom_line"
+        app:layout_constraintEnd_toStartOf="@id/buttonIdSecond_fragment_Next"
+        app:layout_constraintStart_toStartOf="@id/help_left_line"
+        app:layout_constraintTop_toBottomOf="@+id/product_type" />
+
+    <Button
+        android:id="@+id/buttonIdSecond_fragment_Next"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="@id/help_bottom_line"
+        app:layout_constraintEnd_toEndOf="@id/help_right_line"
+        app:layout_constraintStart_toEndOf="@id/second_fragment_cancel"
+        app:layout_constraintTop_toTopOf="@+id/second_fragment_cancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

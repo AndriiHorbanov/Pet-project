@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthFragment">
+
+    <TextView
+        android:id="@+id/filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="@string/filler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_choice_filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filler">
+
+        <RadioButton
+            android:id="@+id/fourth_amnesia_spliff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/amnesia" />
+
+        <RadioButton
+            android:id="@+id/fourth_black_widow_spliff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/black_widow" />
+
+        <RadioButton
+            android:id="@+id/fourth_skunk_spliff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skunk" />
+
+        <RadioButton
+            android:id="@+id/fourth_pablo_escobar_spliff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pablo_escobar" />
+
+        <RadioButton
+            android:id="@+id/fourth_montreal_spliff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/montreal" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/Amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_choice_filler"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/fourth_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount">
+
+        <RadioButton
+            android:id="@+id/fourth_quantity_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/one"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/fourth_quantity_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <RadioButton
+            android:id="@+id/fourth_quantity_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/three"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+    </RadioGroup>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/fourth_switch_spliff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/gift_warp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_quantity" />
+
+
+    <Button
+        android:id="@+id/fourth_fragment_cancel"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toStartOf="@id/fourth_fragment_next"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_switch_spliff" />
+
+    <Button
+        android:id="@+id/fourth_fragment_next"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#00BCD4"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fourth_fragment_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_switch_spliff" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
